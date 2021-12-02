@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://unpkg.com/vue@next"></script>
+  <title>Document</title>
+</head>
+<body>
+  <main>
+    <div class="container">
+    <p class="title-cats">Кошки</p>
+    <section class="flex-row around" id="app">
+      <div  v-for="cat in cats" class="col-3 cat-cart">
+        <img class="img-cat" v-bind:src="cat.img">
+        <h2>Кличка:{{cat.name}}</h2>
+        <p>Возраст:{{cat.age}}</p>
+        <p>Цвет:{{cat.color}}</p>
+        <a class="buton-info" href="">Подробнее</a>
+      </div>
+
+    </section>
+  </div>
+  </main>
+  <script src="/js/main.js"></script>
+</body>
+</html>

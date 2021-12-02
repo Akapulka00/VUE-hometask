@@ -1,0 +1,40 @@
+@import "flex-grid.css";
+
+.img-cat{
+width: 100%;
+height: auto;
+border-radius: 15px;
+}
+.cat-cart{
+padding: 0 .5rem;
+}
+body {
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12pt;
+  max-width: 2000px;
+
+}
+.container{
+  margin: 0 10% ;
+  width: 80%;
+}
+.around{
+  justify-content: space-around
+}
+.title-cats{
+  font-size: 22pt;
+  border-bottom: 2px solid black;
+  border-bottom-right-radius: 20px;
+}
+.buton-info{
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  border: 1px solid black;
+  padding:.5rem 0;
+  border-radius: 10px;
+  background-color: #2C4073;
+  color: #F1D7C4;
+}
