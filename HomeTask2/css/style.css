@@ -1,0 +1,36 @@
+@import "flex-grid.css";
+
+.button{
+text-align: center;
+text-decoration: none;
+color:black;
+background-color: azure;
+border: 1px solid black;
+padding: 1rem;
+}
+body {
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  margin: .5rem 3rem;
+  font-size: 12pt;
+  max-width: 2000px;
+}
+.container{
+  padding: .3rem .5rem;
+}
+.container-image{
+width: 100%;
+height: auto;
+border-radius: 5px;
+}
+.hite_title{
+  font-size: 20pt;
+  padding: 0 3rem;
+}
+.center {
+  margin-top: 1rem;
+  align-items: center;
+}
+.rad-image{
+border-radius: 300px;
+}

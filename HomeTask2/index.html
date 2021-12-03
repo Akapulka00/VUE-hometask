@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="https://unpkg.com/vue@next"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <section  id="app">
+  <header>
+    <section>
+    <div class="flex-row">
+      <p href="" class="col-6 button" v-on:click="elem1">Отобразить сеткой</p>
+      <p href="" class="col-6 button" v-on:click="elem2">Отобразить списком</p>
+    </div>
+  </section>
+  </header>
+  <main>
+    <section class="flex-row" v-if="this.currentTabTitle===this.tabTitles[0]" >
+      <div  v-for="articl in articles " class="container col-4">
+          <img class="container-image" v-bind:src="articl.image"  v-bind:alt="asdas">
+      </div>
+    </section>
+    <section >
+      <div  v-for="articl in articles " class="flex-row center" v-if="currentTabTitle===tabTitles[1]" >
+        <img class="rad-image col-2" v-bind:src="articl.image"  v-bind:alt="asdas" >
+        <p class="col-10 hite_title">{{articl.title.toUpperCase()}}</p>
+    </div>
+    </section>
+  </main>
+</section>
+  <script src="/js/main.js"></script>
+</body>
+</html>
