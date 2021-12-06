@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/vue@next"></script>
+  <link rel="stylesheet" href="/css/style1.css">
+  <title>Document</title>
+</head>
+<body>
+<main>
+  <section id="app">
+    <div class="flex-row">
+      <div class="col-9">
+      <h1>Доступные услуги:</h1>
+      <div class="flex-column ">
+       <div class="flex-row " v-for="elem in services"  v-on:click="vibor(elem)">
+         <p class="title_uslug table col-6">{{elem.title}}</p>
+         <p  class="price_uslug table col-3">{{elem.price}} Рублей</p>
+       </div>
+      </div>
+      </div>
+      <div class="col-3 left_line">
+        <h2>Корзина:</h2>
+        <p v-if="all_services.length==0">Корзина пуста</p>
+        <div v-for="elem in all_services">
+          <p>{{elem.title}}:</p>
+          <p class="inline">{{elem.price}} Рублей  </p>
+          <p class="delete col-2 inline" v-on:click="del(elem)">Х</p>
+        </div>
+        <div lass="flex-row top_line">
+          <h2 >Сумма:</h2>
+          <p class="inline bold">{{sum}}  Рублей</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="/js/main2.js"></script>
+</body>
+</html>
