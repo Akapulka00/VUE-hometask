@@ -1,0 +1,58 @@
+@import "flex-grid.css";
+
+.button{
+text-align: center;
+text-decoration: none;
+color:black;
+background-color: azure;
+border: 1px solid black;
+padding: 1rem;
+}
+body {
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  margin: .5rem 3rem;
+  font-size: 12pt;
+  max-width: 2000px;
+}
+.container{
+  padding: .3rem .5rem;
+  align-items: stretch
+}
+.container-image{
+width: 100%;
+height: auto;
+border-radius: 5px;
+}
+.hite_title{
+  font-size: 20pt;
+  padding: 0 3rem;
+}
+.center {
+  margin-top: 1rem;
+  align-items: center;
+}
+.rad-image{
+border-radius: 300px;
+}
+.mini_buton {
+  border: 1px solid black;
+  display: inline;
+  height: 100%;
+  padding:0 1rem;
+  margin-left: 2rem;
+  border-radius: 5px;
+  background-color:whitesmoke;
+}
+.doland_img img{
+width: 100%;
+height: auto;
+
+}
+.buttom{
+  width: 100%;
+  height: 100%;
+  align-items: flex-end;
+  justify-content: center;
+  padding: .5rem 0 ;
+}
